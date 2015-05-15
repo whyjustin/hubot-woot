@@ -13,7 +13,7 @@ todaysWootUrl = baseUrl + 'events.json?site=www.woot.com&eventType=Daily&key=' +
 module.exports = (robot) ->
   robot.respond /woot/i, (msg) ->
     robot.http(todaysWootUrl).get() (err, res, body) ->
-      if error?
+      if err?
         msg.send "#{body}"
       else
         todaysWoot = JSON.parse(body)[0].Offers[0]
