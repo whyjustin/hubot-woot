@@ -3,7 +3,7 @@
 #
 # Commands:
 #   hubot woot - Displays the current woot.
-#   hubot [shirt|electronic|computer|all] - Displays the current woot site.
+#   hubot woot <shirt|electronic|computer|all> - Displays the current woot site.
 #   hubot poll - Displays the current woot poll.
 
 wootAPI = process.env.HUBOT_WOOT_API_KEY
